@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/Layout"
+layout:decorate="@{layout/default_humanResources}">
+
+<th:block layout:fragment="pageTitle">
+	   <div class="border-head"> 
+	    <h3 th:text="${title}"></h3>
+	    </div>
+</th:block>
+
+
+<th:block layout:fragment="container">
+	인사관리 
+	<div class="form-panel">
+	 <h4 class="mb"><i class="fa fa-angle-right"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 사원등록</font></font></h4>
+              <div class="form">
+                <form class="cmxform form-horizontal style-form" id="signupForm" method="get" action="">
+                  <div class="form-group ">
+                    <label for="firstname" class="control-label col-lg-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">사원코드</font></font></label>
+                    <div class="col-lg-10">
+                      <input class=" form-control" id="workerCode" name="workerCode" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group ">
+                    <label for="firstname" class="control-label col-lg-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">사원명</font></font></label>
+                    <div class="col-lg-10">
+                      <input class=" form-control" id="workerName" name="workerName" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group ">
+                    <label for="lastname" class="control-label col-lg-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">아이디</font></font></label>
+                    <div class="col-lg-10">
+                      <input class=" form-control" id="workderId" name="workderId" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group ">
+                    <label for="password" class="control-label col-lg-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">패스워드</font></font></label>
+                    <div class="col-lg-10">
+                      <input class="form-control " id="workerPw" name="workerPw" type="password">
+                    </div>
+                  </div>
+                    <div class="form-group ">
+                    <label for="confirm_password" class="control-label col-lg-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">비밀번호 확인</font></font></label>
+                    <div class="col-lg-10">
+                      <input class="form-control " id="workerPwCheck" name="workerPwCheck" type="password">
+                    </div>
+                  </div>
+                  <div class="form-group ">
+                    <label for="email" class="control-label col-lg-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">이메일</font></font></label>
+                    <div class="col-lg-10">
+                      <input class="form-control " id="workerEmail" name="workerEmail" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group ">
+                    <label for="email" class="control-label col-lg-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">전화번호</font></font></label>
+                    <div class="col-lg-10">
+                      <input class="form-control " id="workerPhone" name="workerPhone" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group ">
+                    <label for="email" class="control-label col-lg-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">주소</font></font></label>
+                    <div class="col-lg-10">
+                      <input class="form-control " id="workerAddr" name="workerAddr" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group ">
+                    <label for="agree" class="control-label col-lg-2 col-sm-3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">부서</font></font></label>
+                    <div class="col-lg-10 col-sm-9">
+                      <input type="radio" style="width: 18px; display:inline;" class="checkbox form-control" id="headquarters" name="headquarters">본사
+                      <input type="radio" style="width: 18px; display:inline;" class="checkbox form-control" id="factory" name="factory">공장
+                    </div>
+                  </div>
+                  <div class="form-group ">
+                    <label for="newsletter" class="control-label col-lg-2 col-sm-3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">직급</font></font></label>
+                    <div class="col-lg-10 col-sm-9">
+                      <input type="radio" style="width: 18px; display:inline;" class="checkbox form-control" id="employee" name="employee">사원
+                      <input type="radio" style="width: 18px; display:inline;" class="checkbox form-control" id="chief" name="chief">주임
+                      <input type="radio" style="width: 18px; display:inline;" class="checkbox form-control" id="deputy" name="deputy">대리
+                      <input type="radio" style="width: 18px; display:inline;" class="checkbox form-control" id="manager" name="manager">과장
+                      <input type="radio" style="width: 18px; display:inline;" class="checkbox form-control" id="deputy chief" name="deputy chief">차장
+                      <input type="radio" style="width: 18px; display:inline;" class="checkbox form-control" id="boss" name="boss">부장
+                      <input type="radio" style="width: 18px; display:inline;" class="checkbox form-control" id="executives" name="executives">임원
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-lg-offset-2 col-lg-10">
+                      <button class="btn btn-theme" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">사원등록</font></font></button>
+                      <button class="btn btn-theme04" type="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">취소</font></font></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+
+</th:block>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+      <div th:fragment="sidebar_system" id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <h5 class="centered">시스템관리</h5>
+
+
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-cogs"></i>
+              <span>사원등록</span>
+              </a>
+            <ul class="sub">
+              <li><a th:href="@{#}">등록</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-book"></i>
+              <span>사원조회</span>
+              </a>
+            <ul class="sub">
+              <li><a th:href="@{#}">조회</a></li>
+            </ul>
+          </li>
+ 
+    
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+</html>
